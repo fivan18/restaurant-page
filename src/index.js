@@ -1,10 +1,13 @@
-import _ from 'lodash';
+import { getElement, render } from './domManipulation';
+import { navbar} from './layouts';
 
-function component() {
-  const element = document.createElement('div');
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-  return element;
+export function init(doc) {
+  const nav = navbar();
+  const container = getElement(doc, '#content');
+  render(container, nav);
 }
 
-document.body.appendChild(component());
+
+init(document);
+
