@@ -1,11 +1,14 @@
 import { getElement, render } from './domManipulation';
-import { navbar} from './layouts';
+import { navbar, main, home} from './layouts';
 
 
 export function init(doc) {
-  const nav = navbar();
-  const container = getElement(doc, '#content');
-  render(container, nav);
+  let container = getElement(doc, '#content');
+  render(container, navbar() + main());
+
+  container = getElement(doc, '.main-content');
+  render(container, home());
+
 }
 
 
