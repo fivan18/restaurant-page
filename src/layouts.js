@@ -100,5 +100,5 @@ export {
   main,
   home,
   menu,
-  contact
+  contact,
 };
