@@ -29,42 +29,69 @@ function main() {
 
 function home() {
   return `
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="jumbotron jumbotron-fluid transparent p-3">
+      <h1 class="display-4 d-flex justify-content-center">Chilango Taco</h1>
+      <p class="lead">The right place to eat mexican tacos, come with your family.</p>
     </div>
   `;
 }
 
 function menu() {
   return `
-    <div class="card mb-2 p-3 d-flex flex-row">
-      <div class="mr-2 d-flex align-items-center">
-
-      </div>
-      <div class="d-flex justify-content-between w-100">
-        <div class="card-body">
-          <h5 class="card-title">Taquitos al pastor</h5>
-          <span class="badge badge-dark">
-          </span>
-          <p class="card-text"><small class="text-muted">
-            Delicatece para el paladar
-          </small></p>
+    <ul class="list-unstyled transparent p-3">
+      <li class="media">
+        <div class="img-size mr-3">
+          <img src="assets/images/amie-watson-2hBUvhe81mU-unsplash.jpg" class="img-fluid" alt="...">
         </div>
-        <div> 
-          $102
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Campechano</h5>
+          A taco is a traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a filling
         </div>
-      </div>
-    </div>
+      </li>
+      <li class="media mt-4">
+        <div class="img-size mr-3">
+          <img src="assets/images/jarritos-mexican-soda-bA3VwdUYduY-unsplash.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Cochinita pibil</h5>
+          Cochinita pibil (also puerco pibil or cochinita con achiote) is a traditional Mexican slow-roasted pork dish from the Yucatán Peninsula.
+        </div>
+      </li>
+      <li class="media mt-4">
+        <div class="img-size mr-3">
+          <img src="assets/images/krisztian-tabori-ZQf4jzkpz1k-unsplash.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Al pastor</h5>
+          Al pastor, also known as tacos al pastor, is a taco made with spit-grilled pork.
+        </div>
+      </li>
+    </ul>
   `;
 }
 
 function contact() {
   return `
-    <div>Contact</div>
+  <div class="jumbotron jumbotron-fluid transparent p-3">
+    <h1 class="display-4">Chilango Taco</h1>
+    <p class="lead">Fell free to contact us for info or place location</p>
+    <hr class="my-4">
+    <div>
+      <i class="fas fa-phone-square-alt icon-size"></i>   555-44-23-10
+    </div>
+    <div>
+      <i class="fas fa-envelope-square icon-size"></i>    info@chilangotaco.com
+    </div>
+    <div>
+      <i class="fas fa-map-marker-alt icon-size"></i>     Wall street #5 Chilangolandia, CDMX.
+    </div>
+    <hr class="my-4">
+    <div>
+      <i class="fab fa-facebook-square icon-size"></i>
+      <i class="fab fa-twitter icon-size"></i>
+      <i class="fab fa-instagram-square icon-size"></i>
+    </div>
+  </div>
   `;
 }
 
