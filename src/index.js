@@ -5,6 +5,8 @@ import {
   navbar, main, home, menu, contact,
 } from './layouts';
 
+import './css/style.css';
+
 // Render main layout
 let container = getElement(document, '#content');
 render(container, navbar() + main());
