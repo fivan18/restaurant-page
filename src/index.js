@@ -5,7 +5,7 @@ import {
   navbar, main, home, menu, contact,
 } from './layouts';
 
-import './css/style.css';
+import './assets/css/style.css';
 
 // Render main layout
 let container = getElement(document, '#content');

@@ -1,3 +1,8 @@
+import backgroundImg from './assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg';
+import campechanoImg from './assets/images/amie-watson-2hBUvhe81mU-unsplash.jpg';
+import cochinitaImg from './assets/images/jarritos-mexican-soda-bA3VwdUYduY-unsplash.jpg';
+import pastorImg from './assets/images/krisztian-tabori-ZQf4jzkpz1k-unsplash.jpg';
+
 function navbar() {
   return `
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">    
@@ -20,7 +25,7 @@ function navbar() {
 function main() {
   return `
     <main class="position-relative">
-      <img src="assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg" class="img-fluid" alt="Responsive image">
+      <img src="${backgroundImg}" class="img-fluid" alt="Responsive image">
       <div class="main-content position-absolute">
       </div>
     </main>
@@ -41,7 +46,7 @@ function menu() {
     <ul class="list-unstyled transparent p-3">
       <li class="media">
         <div class="img-size mr-3">
-          <img src="assets/images/amie-watson-2hBUvhe81mU-unsplash.jpg" class="img-fluid" alt="...">
+          <img src="${campechanoImg}" class="img-fluid" alt="...">
         </div>
         <div class="media-body">
           <h5 class="mt-0 mb-1">Campechano</h5>
@@ -50,7 +55,7 @@ function menu() {
       </li>
       <li class="media mt-4">
         <div class="img-size mr-3">
-          <img src="assets/images/jarritos-mexican-soda-bA3VwdUYduY-unsplash.jpg" class="img-fluid" alt="...">
+          <img src="${cochinitaImg}" class="img-fluid" alt="...">
         </div>
         <div class="media-body">
           <h5 class="mt-0 mb-1">Cochinita pibil</h5>
@@ -59,7 +64,7 @@ function menu() {
       </li>
       <li class="media mt-4">
         <div class="img-size mr-3">
-          <img src="assets/images/krisztian-tabori-ZQf4jzkpz1k-unsplash.jpg" class="img-fluid" alt="...">
+          <img src="${pastorImg}" class="img-fluid" alt="...">
         </div>
         <div class="media-body">
           <h5 class="mt-0 mb-1">Al pastor</h5>
